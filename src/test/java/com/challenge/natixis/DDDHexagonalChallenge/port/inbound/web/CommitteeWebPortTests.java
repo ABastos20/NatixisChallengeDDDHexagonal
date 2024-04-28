@@ -1,8 +1,8 @@
 package com.challenge.natixis.DDDHexagonalChallenge.port.inbound.web;
 
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence.CommitteeJpaRepository;
 import com.challenge.natixis.DDDHexagonalChallenge.application.dto.CommitteeDto;
 import com.challenge.natixis.DDDHexagonalChallenge.application.service.CommitteeService;
+import com.challenge.natixis.DDDHexagonalChallenge.domain.repository.CommitteeRepository;
 import com.challenge.natixis.DDDHexagonalChallenge.port.mapper.CommitteeMapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -44,7 +44,7 @@ public class CommitteeWebPortTests {
     private CommitteeMapper committeeMapper;
 
     @Mock
-    private CommitteeJpaRepository committeeRepository;
+    private CommitteeRepository committeeRepository;
 
     @InjectMocks
     private CommitteeWebPort committeeWebPort;

@@ -1,11 +1,9 @@
-package com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence;
+package com.challenge.natixis.DDDHexagonalChallenge.port.outbound.persistence;
 
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.model.ProblemJpa;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository

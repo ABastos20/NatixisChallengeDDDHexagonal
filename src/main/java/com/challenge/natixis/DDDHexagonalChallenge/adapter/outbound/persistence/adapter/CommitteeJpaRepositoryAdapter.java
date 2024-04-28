@@ -1,21 +1,19 @@
 package com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence.adapter;
 
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.mapper.CommentJpaMapper;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.mapper.CommitteeJpaMapper;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.mapper.ProblemJpaMapper;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.model.CommitteeJpa;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.model.ProblemJpa;
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence.CommitteeJpaRepository;
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence.ProblemJpaRepository;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.model.Committee;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.model.CommitteeStatus;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.model.ProblemStatus;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.repository.CommitteeRepository;
+import com.challenge.natixis.DDDHexagonalChallenge.port.outbound.persistence.CommitteeJpaRepository;
+import com.challenge.natixis.DDDHexagonalChallenge.port.outbound.persistence.ProblemJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

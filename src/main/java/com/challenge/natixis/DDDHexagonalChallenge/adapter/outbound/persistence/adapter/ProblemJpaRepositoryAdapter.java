@@ -2,11 +2,10 @@ package com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence
 
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.mapper.CommentJpaMapper;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.mapper.ProblemJpaMapper;
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.model.CommentJpa;
 import com.challenge.natixis.DDDHexagonalChallenge.adapter.model.ProblemJpa;
-import com.challenge.natixis.DDDHexagonalChallenge.adapter.outbound.persistence.ProblemJpaRepository;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.model.Problem;
 import com.challenge.natixis.DDDHexagonalChallenge.domain.repository.ProblemRepository;
+import com.challenge.natixis.DDDHexagonalChallenge.port.outbound.persistence.ProblemJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
