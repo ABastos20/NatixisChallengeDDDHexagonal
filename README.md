@@ -34,31 +34,48 @@ Ensure you have the following installed before running the application:
 
 Follow these steps to get the project up and running:
 
-Build the project using Maven:
+## Build the project using Maven:
+
  mvn clean package
 
-Run the application:
+## Run the application:
+
 mvn spring-boot:run
-# or
+
+or
+
 java -jar target/DDDHexagonalChallenge-0.0.1-SNAPSHOT.jar
 
-API Documentation
+# API Documentation
+
 Access the Swagger UI for the API documentation at http://localhost:8080/api after starting the application.
 
-API Endpoints
-Problem Web Port
-GET /api/problems: List all problems in the system.
-POST /api/problems: Create a new problem.
-POST /api/problems/{problemName}/comments: Add a comment to a problem.
-POST /api/problems/{problemName}/committees/{committeeDate}: Add a Problem to a Committee.
-Committees Web Port
-GET /api/committees: List all committees in the system.
-POST /api/committees: Schedule a new committee.
-PUT /api/committees/{committeeDate}/start: Start a committee.
-PUT /api/committees/{committeeDate}/close: Close a committee.
+# API Endpoints
 
-Usage:
-Problem Web Port
+## Problem Web Port
+
+**GET /api/problems**: List all problems in the system.
+
+**POST /api/problems**: Create a new problem.
+
+**POST /api/problems/{problemName}/comments**: Add a comment to a problem.
+
+**POST /api/problems/{problemName}/committees/{committeeDate}**: Add a Problem to a Committee.
+
+## Committees Web Port
+
+**GET /api/committees**: List all committees in the system.
+
+**POST /api/committees**: Schedule a new committee.
+
+**PUT /api/committees/{committeeDate}/start**: Start a committee.
+
+**PUT /api/committees/{committeeDate}/close**: Close a committee.
+
+## Usage:
+
+### Problem Web Port
+
 GET /api/problems: List all problems in the system.
 curl -X 'GET' \
   'http://localhost:8080/api/problems' \
@@ -86,7 +103,7 @@ curl -X 'POST' \
   -H 'accept: */*' \
   -d ''
 
-Committees Web Port
+### Committees Web Port
 
 GET /api/committees: List all committees in the system.
 curl -X 'GET' \
@@ -112,9 +129,11 @@ curl -X 'PUT' \
   'http://localhost:8080/api/committees/close?date=*DATE format yyyy-mm-dd*' \
   -H 'accept: */*'
 
-Testing
+# Testing
 To run unit tests :
- mvn clean test
+ 
+mvn clean test
 
-Contact
+## Contact
+
 For queries or suggestions, contact the project maintainer at abastosvlc@gmail.com.
